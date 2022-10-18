@@ -9,15 +9,23 @@
             Item Input
         </h1>
         <form action="" method="post">
-            <label for="name">Item Name</label><br>
+            <label for="num">Item Number</label>
+            <input type="number" name="num" id="">
+            <label for="name">Item Name</label><br> 
             <input type="text" name="name" id=""><br>
+            <label for="pic">Item Picture</label><br>
+            <input type="file" name="pic" id="">
             <label for="type">Item Type</label><br>
-            <label for="thing">Think</label>
+            <label for="thing">Thing</label>
             <input type="radio" name="type" id="thing" value="thing">
             <label for="not thing">NOT Thing</label>
             <input type="radio" name="type" id="not thing" value="not thing"> <br>
             <label for="price">Item Price</label><br>
             <input type="number" name="price" id=""><br>
+            <label for="desc">Item Description</label><br>
+            <textarea name="dec" id="" cols="30" rows="10">Describe Your Item Here</textarea><br>
+            <label for="stock">Item Stock</label><br>
+            <input type="number" name="stock" id=""><br>
             <label for=""></label>
         </form>
     </body>
