@@ -1,0 +1,30 @@
+body{
+    background: url(https://i.pinimg.com/564x/52/13/0b/52130be7b94f15e6ca69c7df6259e815.jpg);
+    color: grey;
+    margin: 50px 100px 100px 100px;
+}
+.Card{
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+.img{
+    border-radius: 2%;
+    margin: 10px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.377);
+}
+.isi b{
+    color:rgb(34, 25, 119);
+    font-size: x-large;
+}
+.isi p{
+    color: black;
+    padding: 20px;
+}
+.isi{
+    background: url(https://i.pinimg.com/564x/2d/67/f9/2d67f9834649b584682ab58606f5a27e.jpg);
+    border-radius: 10px;
+}
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
