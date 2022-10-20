@@ -1,17 +1,31 @@
 .card{
+    margin: 0px 5px 0px 5px;
     background-color: aqua;
     font-family: 'Courier New', Courier, monospace;
-    width: 500;
+    width: 480;
     box-shadow: 10px 5px #000;
+    border-radius: 10px;
 }
 .img{
     /* align-items: center; */
-    margin: 20px 100px 20px 100px;
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+    padding-top: 20px;
     border-radius: 10px;
+    width: 280;
 }
 p{
     text-align: center;
 }
-table{
-    border-width: 80px;
+h1{
+    text-align: center;
+}
+.card2{
+    margin: 1rem 5px 1rem 5px;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    width: 480;
+    box-shadow: 10px 5px #000;
+    border-radius: 10px;
 }
