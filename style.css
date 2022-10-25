@@ -1,6 +1,6 @@
 .card{
     margin: 0px 5px 0px 5px;
-    background-color: aqua;
+    background-color: grey;
     font-family: 'Courier New', Courier, monospace;
     width: 480;
     box-shadow: 10px 5px #000;
@@ -23,7 +23,15 @@ h1{
 }
 .card2{
     margin: 1rem 5px 1rem 5px;
-    background-color: aqua;
+    background-color: rgb(55, 0, 255);
+    font-family: 'Courier New', Courier, monospace;
+    width: 480;
+    box-shadow: 10px 5px #000;
+    border-radius: 10px;
+}
+.card3{
+    margin: 1rem 5px 0px 5px;
+    background-color: rgb(255, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     width: 480;
     box-shadow: 10px 5px #000;
