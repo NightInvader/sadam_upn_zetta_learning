@@ -1,8 +1,9 @@
-function hitungHarga(buku, diskon, pajak, totalOrder){
+function hitungHarga(buku, diskon, pajak, stok, totalOrder){
     let totalBayar = 0;
     let totalHarga = 0;
     let totalStlhDiskon = 0;
     let totalPajak = 0;
+    let purchase = " ";
 
     const harga = buku.harga;
     const totalDiskon = harga * (diskon/100);
@@ -12,10 +13,14 @@ function hitungHarga(buku, diskon, pajak, totalOrder){
 
     for(let index =0;
         index < totalOrder; index++){
-            if(buku && buku.harga){
+            if(buku && buku.harga && (index < stok)){
                 totalHarga += buku.harga;
                 totalStlhDiskon += hargaStlhDiskon;
                 totalPajak += hargaPajak;
+                purchase = "gas beli lagi";
+            }else{
+                console.log('Stok Abis bos');
+                break;
             }
         }
 
@@ -34,9 +39,10 @@ function hitungHarga(buku, diskon, pajak, totalOrder){
         console.log('Pajak \t\t: Rp.',totalPajak);
         console.log('Total Pembayaran \t: Rp.',totalBayar);
         console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
-        console.log();
+        console.log('Stok yang Tersedia \t\t: ',stok-totalOrder);
+        console.log(purchase);
         console.groupEnd();
     }
     return totalBayar;
 }
-hitungHarga({judul:"Sea Of Thieves", harga:250000,status:"impor"},20,10,2);
+hitungHarga({judul:"Sea Of Thieves", harga:250000,status:"impor"},20,10,20,2);
