@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-12">
+      <h3>Tambahkan Tugas</h3>
+      <hr>
+      <label>Nama Tugas :</label>
+      <input type="text" class="form-control" [(ngModel)]="newTaskName">
+      <label>Deskripsi Tugas</label>
+      <input type="text" class="form-control" [(ngModel)]="newTaskContent">
+      <br>
+      <button
+        class="btn btn-primary"
+        (click)="onAddTask()">Tugas Individu</button>
+      <button
+        class="btn btn-primary"
+        (click)="onAddGroupTask()">Tugas Kelompok</button>
+    </div>
+  </div>
